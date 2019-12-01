@@ -4,4 +4,7 @@
 ## How to use
 
 ## Functions
-
+| Function | Description |
+| :---: | :--- |
+| memset | |
+| bzero | |
