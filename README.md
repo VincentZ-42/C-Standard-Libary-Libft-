@@ -1,7 +1,16 @@
 # C Libary (Libft)
+
+### Table Of Contents
+* [Introduction](#introduction)
+* [Objective](#objective)
+* [Usage](#usage)
+* [Personal Functions](#Personal Functions)
+* [Functions](#Standard Functions in C Libaries)
+
+## Objective
 * Very first project at 42, involving creating personal and useful useful functions as well as standard functions in C Libaries
 
-## How to use
+## Usage
 
 ## Personal Functions
 | Function | Description |
