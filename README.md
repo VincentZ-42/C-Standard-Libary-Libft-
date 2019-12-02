@@ -1,7 +1,6 @@
 # C Libary (Libft)
 
 ### Table Of Contents
-* [Introduction](#introduction)
 * [Objective](#objective)
 * [Usage](#usage)
 * [Personal Functions](#Personal-Functions)
