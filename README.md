@@ -4,8 +4,8 @@
 * [Introduction](#introduction)
 * [Objective](#objective)
 * [Usage](#usage)
-* [Personal Functions](#Personal Functions)
-* [Functions](#Standard Functions in C Libaries)
+* [Personal Functions](#Personal-Functions)
+* [Functions](#Standard-Functions-in-C-Libaries)
 
 ## Objective
 * Very first project at 42, involving creating personal and useful useful functions as well as standard functions in C Libaries
