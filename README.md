@@ -46,7 +46,7 @@
 | ft_lstmap | |
 
 ## Standard Functions in C Libaries
-| Function | :Description: |
+| Function | Description |
 | :---: | :--- |
 | [**ft\_memset()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_memset.c) | The ft\_memset() function writes len bytes of value c (converted to an unsigned char) to the string b. Returns it's first argument.|
 | [**ft\_bzero()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_bzero.c) | The ft\_bzero() function writes n zeroed bytes to the string s.  If n is zero, ft\_bzero() does nothing.|
@@ -68,11 +68,11 @@
 | [**ft\_strnstr()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_strnstr.c) | The ft\_strnstr() function locates the first occurrence of the null-terminated string needle in the null-terminated string haystack, where not more than len characters are searched. Characters after the '\0' are not searched. If needle is an empty string, haystack is returned; if needle occurs nowhere in haystack, NULL is returned; otherwise a pointer to the first character of the first occurrence of needle is returned.|
 | [**ft\_strcmp()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_strcmp.c) | The ft\_strcmp() function lexicographically compares the null-terminated strings s1 and s2. Returns an integer greater than, equal to, or less than 0, according as the string s1 is greater than,equal to, or less than the string s2.  The comparison is done using unsigned characters, so that '\200' is greater than '\0'.|
 | [**ft\_strncmp()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_strcmp.c) | The ft\_strncmp() function lexicographically compares the null-terminated strings s1 and s2. Returns an integer greater than, equal to, or less than 0, according as the string s1 is greater than, equal to, or less than the string s2.  Compares not more than n characters. The comparison is done using unsigned characters, so that '\200' is greater than '\0'.|
-| atoi | |
-| isalpha | |
-| isdigit | |
-| isalnum | |
-| isascii | |
-| isprint | |
-| toupper | |
-| tolower | |
+| [**ft\_isalpha()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_isalpha.c) |The ft\_isalpha() function tests for any character for which isupper(3) or islower(3) is true.  The value of the argument must be representable as an unsigned char or the value of EOF. |
+| [**ft\_isdigit()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_isdigit.c) | The ft\_isdigit() function tests for a decimal digit character.  Regardless of locale, this includes the following characters only: '0' - '9'. |
+| [**ft\_isalnum()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_isalnum.c) | The ft\_isalnum() function tests for any character for which ft\_isalpha(3) or ft\_isdigit(3) is true.  The value of the argument must be representable as an unsigned char or the value of EOF. |
+| [**ft\_isascii()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_ascii.c) | The ft\_isascii() function tests for an ASCII character, which is any character between 0 and decimal  127 inclusive. |
+| [**ft\_isprint()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_isprint.c) | The ft\_isprint() function tests for any printing character, including space (' ').  The value of the argument must be representable as an unsigned char or the value of EOF. |
+| [**ft\_atoi()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_atoi.c) | ft\_atoi() converts the initial portion of the string pointed to by str to int representation and returns the int. |
+| [**ft\_toupper()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_toupper.c) | The ft\_toupper() function converts a lower-case letter to the corresponding upper-case letter.  The argument must be representable as an unsigned char or the value of EOF. If the argument is a lower-case letter, the ft\_toupper() function returns the corresponding upper-case letter if there is one; otherwise, the argument is returned unchanged. |
+| [**ft\_tolower()**](https://github.com/michaelbrave/C-Standard-Library-Clone---42-libft/blob/master/src/ft_tolower.c) | The ft\_tolower() function converts an upper-case letter to the correspond-ing lower-case letter.  The argument must be representable as an unsigned char or the value of EOF. |
