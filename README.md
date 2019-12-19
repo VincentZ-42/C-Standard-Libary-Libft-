@@ -7,43 +7,50 @@
 * [Functions](#Standard-Functions-in-C-Libaries)
 
 ## Objective
-* Very first project at 42, involving creating personal and useful useful functions as well as standard functions in C Libaries
+* Learn about string manipulation, data variable types, memory allocation, and how to compile and use Libaries in C
+* To reverse engineer and recreate common functions used in Standard C Libaries
+* To create personally useful functions to use in future projects
 
 ## Usage
+1. Clone repository into desired directory location
+2. Open terminal and open directory containing all files
+3. Type "make" into command line
+4. Type "make clean" into command line to remove object files
+5. Static library has now been created and ready to be used by your programs
+6. When compiling, make sure to include flags "-L. -lft" and -I  Ex. "gcc main.c -L. -lft"
 
 ## Personal Functions
 | Function | :Description: |
 | :---: | :--- |
-| ft_memalloc | |
-| ft_memdel | |
-| ft_strnew | |
-| ft_strdel | |
-| ft_strclr | |
-| ft_strriter | |
-| ft_striteri | |
-| ft_strmap | |
-| ft_strmapi | |
-| ft_strequ | |
-| ft_strnequ | |
-| ft_strsub | |
-| ft_strjoin | |
-| ft_strtrim | |
-| ft_strsplit | |
-| ft_itoa | |
-| ft_putchar | |
-| ft_putstr | |
-| ft_putendl | |
-| ft_putnbr | |
-| ft_putchar_fd | |
-| ft_putstr_fd | |
-| ft_putendl_fd | |
-| ft_putnbr_fd | |
-| ft_lstnew | |
-| ft_lstdelone | |
-| ft_lstdel | |
-| ft_lstadd | |
-| ft_lstiter | |
-| ft_lstmap | |
+| **ft\_memalloc()** | Allocates with malloc(3) and returns a fresh memory area. The memory allocated is initialized to 0. If the allocation fails, the function returns NULL.|
+| **ft\_memdel()** | The ft\_memdel() function takes the address of a memory area that needs to be freed with free(3), then puts the pointer to NULL.
+| **ft\_strnew()** | The function ft\_strnew() allocates with malloc(3) and returns a fresh string ending with '\0'. Each character of the string is initialized at '\0'. If the allocation fails, the function returns NULL.|
+| **ft\_strdel()** | The ft\_strdel() function takes as a parameter the address of a string that needs to be freed with free(3), then sets its pointer to NULL.|
+| **ft\_strclr()** | The ft\_strclr() function sets every character of the string s to '\0'.|
+| **ft\_striter()** | The ft\_striter() function applies the function f to each character of the string passed as argument. Each character is passed by address to f to be modified if necessary.|
+| **ft\_striteri()** | The ft\_striteri() function applies the function f to each character of the string passed as argument, and passing its index as first argument. Each character is passed by address to f to be modified if necessary.|
+| **ft\_strmap()** | The function ft\_strmap() applies the function f to each character of the string given as an argument to create a "fresh" new string (with malloc(3)) resulting from the successive applications of f.|
+| **ft\_strequ()** | The ft\_strequ() function does a lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
+| **ft\_strnequ()** | The ft\_strnequ() function does a lexicographical comparison between s1 and s2. If the 2 strings are identical the function returns 1, or 0 otherwise.|
+| **ft\_strsub()** | The ft\_strsub() function allocates with malloc(3) and returns a "fresh" substring from string given as an argument. The substring begins at index start and is of size len. If start and len aren't referring to a valid substring, the behavior is undefined. If the allocation fails, the function returns NULL.|
+| **ft\_strjoin()** | The ft\_strjoin() function allocates (with malloc(3)) and returns a "fresh" string that is the concatenation of s1 and s2, ending with '\0'. If the allocation fails, the function returns NULL.|
+| **ft\_strtrim()** | The ft\_strtrim() function allocates with malloc(3) and returns a copy of the string given as argument without whitespaces at the beginning or at the end of the string. ' ', '\n' and '\t' are considered whitespace characters. If s has no whitespaces at the beginning or the end, the function returns a copy of s. If the allocation fails the function returns NULL.|
+| **ft\_strsplit()** | The ft\_strsplit() function allocates with malloc(3) and returns an array of fresh strings (all ending with '\0' including the array itself) obtained by splitting s using the character c as a delimiter. If the allocation fails, the function returns NULL.|
+| **ft\_itoa()** | The ft\_itoa() fuction allocates (with malloc(3)) and returns a "fresh" string ending with '\0' representing the integer n given as argument. Negative numbers must be supported. If the allocation fails, the function returns NULL.|
+| **ft\_putchar()** | The ft\_putchar() function outputs the character c to the standard output.|
+| **ft\_putstr()** | The ft\_putstr() function outputs a string to the standard output.|
+| **ft\_putendl()** | The ft\_putendl() function outputs a string to the standard output, followed by a newline.|
+| **ft\_putnbr()** | The ft\_putnbr() function outputs the integer n to the standard output|
+| **ft\_putchar\_fd()** | The ft\_putchar\_fd() function outputs the character c to the specified file descriptor. A file descriptor of 0, 1, or 2, refers to  the standard input, standard output, or standard error, respectively.|
+| **ft\_putstr\_fd()** | The ft\_putstr\_fd() function outputs a string to the output specified by the file descriptor. A file descriptor of 0, 1, or 2, refers to the standard input, standard output, or standard error, respectively.|
+| **ft\_putendl\_fd()** | The ft\_putendl\_fd() function outputs a string to the output specified by the file descriptor, followed by a newline. The file descriptor  can be  0, 1, or 2, to refer to standard input, standard output, or standard error, respectively.|
+| **ft\_putnbr\_fd()** | The ft\_putnbr\_fd() function outputs a number to the output specified by the file descriptor. A file descriptor of 0, 1, or 2, refers to the standard input, standard output, or standard error, respectively.|
+| **ft\_lstnew()** | The function ft\_lstnew() allocates (with malloc(3)) and returns a “fresh” link. The variables content and content\_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content\_size is initialized to 0 even if the parameter content\_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL.|
+| **ft\_lstdelone()** | The function ft\_lstdelone() takes as a parameter a link's pointer address and frees the memory of the link's content using the function del given as a parameter, then frees the link's memory using free(3). The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft\_memdel)|
+| **ft\_lstdel()** | The function ft\_lstdel() takes as a parameter the address of a pointer to a link and frees the memory of that link, and every successor of that link using the functions del and free. The last pointer is set to NULL.|
+| **ft\_lstadd()** | The ft\_lstadd() function adds the element new at the beginning of the list alst.|
+| **ft\_lstiter()** | The ft\_lstiter() function iterates through a list and applies the function f to each link in the list.|
+| **ft\_lstmap()** | The ft\_map() function iterates a list lst and applies the function f to each link to create a “fresh” list (using malloc(3)) resulting from the successive applications of f. If the allocation fails, the function returns NULL.|
 
 ## Standard Functions in C Libaries
 | Function | Description |
