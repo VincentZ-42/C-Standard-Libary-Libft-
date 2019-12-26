@@ -1,4 +1,4 @@
-# C Libary (Libft)
+# C Standard Libary (Libft)
 
 ### Table Of Contents
 * [Objective](#objective)
