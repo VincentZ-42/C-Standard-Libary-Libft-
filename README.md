@@ -15,7 +15,7 @@
 ## Usage
 1. Clone repository into desired directory location
 2. Open terminal and open directory containing all files
-3. Type "make" into command line
+3. Type "make" into command line to create static library (libft.a)
 4. Type "make clean" into command line to remove object files
 5. Static library has now been created and ready to be used by your programs
 6. When compiling, make sure to include flags "-L. -lft" and "-I libft.h" Ex. "gcc main.c -L. -lft -I libft.h"
