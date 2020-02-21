@@ -3,8 +3,8 @@
 ### Table Of Contents
 * [Objective](#objective)
 * [Usage](#usage)
-* [Personal Functions](#Personal-Functions)
 * [Functions](#Standard-Functions-in-C-Libaries)
+* [Personal Functions](#Personal-Functions)
 
 ## Objective
 * Learn about string manipulation, data variable types, memory allocation, and how to compile and use Libaries in C
