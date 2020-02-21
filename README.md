@@ -13,8 +13,8 @@
 * To create personally useful functions to use in future projects
 
 ## Usage
-1. Clone repository into desired directory location
-2. Open terminal and open directory containing all files
+1. Open terminal and clone repository into desired directory location
+2. Open directory containing all files
 3. Type "make" into command line to create static library (libft.a)
 4. Type "make clean" into command line to remove object files
 5. Static library has now been created and ready to be used by your programs
