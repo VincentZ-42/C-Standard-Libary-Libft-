@@ -1,5 +1,5 @@
 # C Standard Libary (Libft)
-* [Instructions](https://github.com/VincentZ-42/C-Standard-Libary-Libft-/files/4238425/libft.en.pdf)
+* [Download Instructions](https://github.com/VincentZ-42/C-Standard-Libary-Libft-/files/4238425/libft.en.pdf)
 
 ### Table Of Contents
 * [Objective](#objective)
